@@ -1,0 +1,18 @@
+GET: api/getCommentsForMatch/{matchid} 
+RETURN: 
+[
+{
+nickname: "Admin",
+comment: "Moyes suck",
+timestamp: "2013-12-04T10:21:14.000Z"
+}
+]
+
+
+POST api/addComment
+
+{
+"comment" : "test kommentaræøå",
+"matchid" : "1",
+"guestnick": "jeevan"
+}

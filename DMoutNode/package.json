@@ -1,0 +1,11 @@
+{
+  "name": "DMoutNode",
+  "version": "0.0.0",
+  "description": "DMoutNode",
+  "main": "app.js",
+  "author": {
+    "name": "sansvi",
+    "email": ""
+  },
+  "dependencies": {}
+}

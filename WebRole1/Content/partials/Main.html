@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+    <body ng-controller="DMctrl">
+      
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-2"><h3>Man United</h3></div>
+            <div class="col-md-1"><h3 style="color:red">0-1</h3></div>
+            <div class="col-md-2"><h3>Newcastle</h3></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2"><h3>Next: <small>I couldnt give a fuck.. </small></h3></div>
+        </div>
+        <br/>
+        <br />
+        <!--moyes out vote-->
+      
+            <div class="row">
+                <div class="col-md-4"> </div>
+                <div class="col-md-8">
+                    <h4 style="color:GrayText">...Defending a one goal lead against mid-table shite? </h4>
+                    <h4 style="color:GrayText">...Giggs coming on while Nani and Kagawa keep the bench warm?</h4>
+                    <h4 style="color:GrayText">
+                        ...<abbr title="Smalling, Wellbeck, Young, Cleverley..">Overrated british premium</abbr> preferred to technically superior players?</h4>
+                    <h4 style="color:GrayText">...Van Persie still injured by Moyes' dinosaur training methods?</h4>
+                    <h2>&nbsp;&nbsp;....Do you want Moyes sacked?</h2>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-5" align="right" style="padding-top: 40px"><button ng-show="false" type="button" class="btn btn-success btn-lg" >YES!</button></div>
+            <div class="col-md-1"><img src="/Content/Images/moyes.jpg" class="img-circle" style="opacity: 0.8; filter: alpha(opacity=80); " /> </div>
+            <div class="col-md-1" style="padding-top: 40px; padding-left: 45px;"><button ng-show="false" type="button" class="btn btn-warning btn-lg">NO!</button></div>
+        </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <br />
+                    <br />
+                    <!--//comment-->
+                    <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-comment"></span> Commentboxie (last 100)
+                            <div class="pull-right">
+                                <a href="#/About" style="color: white;padding-right: 30px">[view all comments]</a>
+                                <button ng-click="refresh()" class="btn btn-default btn-xs">
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                </button>
+                                
+                            </div>
+                            </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix" ng-repeat="comment in commentlist | reverse">
+                                    <span class="chat-img pull-left">
+
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">{{comment.guestnick}}</strong> <small class="pull-right text-muted">
+                                                <span class="glyphicon glyphicon-time"></span>{{comment.timestamp|timeformatting}}
+                                            </small>
+                                        </div>
+                                        <p>
+                                            {{comment.comment}}
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="panel-footer">
+
+                            <div class="row">
+                                <div class="col-md-8"><input type="text" tabindex="1" ng-model="commentNickname" placeholder="Name" class="form-control" /></div>
+                                <div class="col-md-1"><button class="btn btn-info" tabindex="3" ng-click="PostComment(commentNickname, commentMessage)" type="submit">Post!</button></div>
+                            </div>
+
+                            <br />
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <textarea class="form-control" tabindex="2" name="message" ng-model="commentMessage" placeholder="Type in a message" rows="2" style="margin-bottom: 10px; resize: vertical;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                    <!--//comment end-->
+                </div>
+            </div>
+
+</body>
+</html>

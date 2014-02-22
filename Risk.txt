@@ -1,0 +1,9 @@
+Room objektet:
+
+Room.id = 23232
+Room.title = "blalba spill"
+Room.roomname = "32FASF454";
+Room.host = socket.id
+Room.maxplayers = 4
+Room.password = 'heya123'
+Room.game = gameid //set when game has lanched.

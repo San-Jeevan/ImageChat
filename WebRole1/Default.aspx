@@ -20,7 +20,6 @@
 <body>
 
 
-    <div style="height: 0;font-family:'newRoman'">&nbsp;</div>
     <div id="map" style="overflow:hidden"></div>
 <div id="info-overlay">
 

@@ -66,14 +66,15 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\demo.css" />
+    <Content Include="fonts\iconFont.dev.svg" />
+    <Content Include="fonts\iconFont.svg" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\map_grey.jpg" />
     <Content Include="Content\img\names.png" />
@@ -192,6 +193,12 @@
     <Content Include="fonts\ecoicons\ecoicons.eot" />
     <Content Include="fonts\ecoicons\ecoicons.ttf" />
     <Content Include="fonts\ecoicons\ecoicons.woff" />
+    <Content Include="fonts\iconFont.eot" />
+    <Content Include="fonts\iconFont.json" />
+    <Content Include="fonts\iconFont.ttf" />
+    <Content Include="fonts\iconFont.woff" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\DMout.pubxml" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
@@ -201,7 +208,6 @@
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <None Include="Scripts\JQuery\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\Bootstrap\bootstrap-datepicker.js" />
     <Content Include="Scripts\DMout\Main.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
@@ -268,11 +274,24 @@
     <Content Include="Scripts\Risk\main.js" />
     <Content Include="Scripts\Risk\paths.js" />
     <Content Include="Scripts\Risk\risk.js" />
-    <Content Include="Scripts\ui-bootstrap-0.9.0.js" />
-    <Content Include="Scripts\ui-bootstrap-0.9.0.min.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.js" />
-    <Content Include="Scripts\ui-bootstrap-tpls-0.9.0.min.js" />
+    <Content Include="Scripts\FancyBox\blank.gif" />
+    <Content Include="Scripts\FancyBox\fancybox_loading%402x.gif" />
+    <Content Include="Scripts\FancyBox\fancybox_loading.gif" />
+    <Content Include="Scripts\FancyBox\fancybox_overlay.png" />
+    <Content Include="Scripts\FancyBox\fancybox_sprite%402x.png" />
+    <Content Include="Scripts\FancyBox\fancybox_sprite.png" />
+    <Content Include="Scripts\FancyBox\helpers\fancybox_buttons.png" />
+    <Content Include="Scripts\FancyBox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Scripts\FancyBox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\FancyBox\helpers\jquery.fancybox-media.js" />
+    <Content Include="Scripts\FancyBox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Scripts\FancyBox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\FancyBox\jquery.fancybox.css" />
+    <Content Include="Scripts\FancyBox\jquery.fancybox.js" />
+    <Content Include="Scripts\FancyBox\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\ui-bootstrap-tpls-0.10.0.js" />
     <Content Include="Scripts\UnderscoreJS\underscore-min.js" />
+    <Content Include="uploadWndContent.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

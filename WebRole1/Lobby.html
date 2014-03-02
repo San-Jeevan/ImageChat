@@ -68,9 +68,9 @@
 
 
     <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
-    <link href="Content/metro-bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/Main.css" rel="stylesheet" />
-
+    <link href="Scripts/FancyBox/jquery.fancybox.css" rel="stylesheet" />
   
     <link href="Content/normalize.css" rel="stylesheet" />
     <link href="Content/demo.css" rel="stylesheet" />
@@ -78,15 +78,12 @@
 
     <script src="http://127.0.0.1:1337/socket.io/socket.io.js"></script>
     <script src="Scripts/jquery-2.0.3.min.js"></script>
-    <script src="Scripts/Navigationscript/gnmenu.js"></script>
-    <script src="Scripts/Navigationscript/classie.js"></script>
-    <script src="Scripts/JQuery/jquery-ui-1.8.24.min.js"></script>
-    <script src="Scripts/Risk/kinetic-v4.4.2.min.js"></script>
+    <script src="Scripts/FancyBox/jquery.fancybox.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.min.js"></script>
     <script src="Scripts/angular-resource.min.js"></script>
     <script src="Scripts/angular-animate.min.js"></script>
-    <script src="Scripts/MetroUI/metro.min.js"></script>
+    <script src="Scripts/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="Scripts/RiskAngularScripts/Directives.js"></script>
     <script src="Scripts/RiskAngularScripts/Filter.js"></script>
     <script src="Scripts/RiskAngularScripts/Service.js"></script>
@@ -100,7 +97,7 @@
 
         $(document).ready(function () {
         
-          
+            $('.MessageField').css("height", screen.availHeight);
         });
 
     </script>
@@ -110,9 +107,9 @@
 </head>
 
 
-<body class="metro" ng-app="RISK" ng-controller="RISKctrl" ng-fast-switch="quickSwitch()" style="background-color: beige">
+<body ng-app="RISK" ng-controller="RISKctrl"  style="background-color: beige">
 
-
+    
 
     <div class="">
         <div ng-include="template.url"></div>

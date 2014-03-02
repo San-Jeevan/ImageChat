@@ -13,8 +13,6 @@ body {
   -o-background-size: cover;
   background-size: cover;*/
 
-    font-family: 'newRoman'; 
-    font-weight: bold;
 }
 
 
@@ -80,9 +78,8 @@ position: relative;
 .MessageField {
 background-color:white;
 overflow-y:auto;
-height: 300px;
+height: 800px;
 width: 100%;
-font-family: 'Times New Roman';
 padding-left:15px;
 padding-right:15px;
 padding-top:3px;
@@ -143,8 +140,8 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(134, 71, 71
 
 .ChatField input[type="text"]
 {
-    width: 95%;
-    font-family: 'Times New Roman';
+    
+    /*font-family: 'Times New Roman';*/
 }
 
 
@@ -223,4 +220,21 @@ cursor: pointer;
 
 .gamelobby-chatfield {
     padding-top: 30px;
+}
+
+.or-box {
+    position: relative;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.or {
+    color: #666666;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: -8px;
+    width: 40px;
+    left: 250px;
 }

@@ -1,39 +1,52 @@
-﻿<div class="container" style="padding-top:50px; z-index:3; position:relative" id="lobby">
-    
-        <div class="grid fluid">
-            <div class="row">       
-                <div class="span2">
-                        <div class="gamelobby-playerfield">
-                            <table class="table hovered">
-                                <thead>
-                                    <tr>
-                                        <th style="font-size: xx-large;">Players online</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="user in users">
-                                        <td>{{user}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                </div>
-                <div class="span9">
-                    <div class="MessageField">
-                        <table>
-                            <tr ng-repeat="msg in lobbymessages">
-                                <td><b style="font-size:small">[{{msg.time|timeformatting}}] <span ng-click="usernameClicked(msg.username)" class=" btn-link">{{msg.username}}</span>:</b> {{msg.content}} </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="ChatField">
-                        <div class="span8"></div>
-                            <div class="input-control text">
-                                <input type="text" autofocus="autofocus" ng-model="chatMessage" ng-enter="sendLobbyMessage(chatMessage)" maxlength="200" placeholder="Write a message" />
-                            </div>
-                    </div>
-                   
-                </div>
+﻿<div style="padding-top:50px; z-index:3; position:relative" id="lobby">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="gamelobby-playerfield">
+                <table class="table hovered">
+                    <thead>
+
+                        <tr>
+                            <th style="font-size: xx-large;">
+                                Players online
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr ng-repeat="user in users">
+                            <td>{{user}}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </div>
+
+
+        <div class="col-md-9">
+            <div class="MessageField">
+                <table>
+                    <tr ng-repeat="msg in messages">
+                        <td ng-show="msg.content"><b style="font-size:small">[{{msg.time|timeformatting}}] <span ng-click="usernameClicked(msg.username)" class=" btn-link">{{msg.username}}</span>:</b> {{msg.content}} </td>
+                        <td ng-show="msg.url"><b style="font-size:small">[{{msg.time|timeformatting}}] <span ng-click="usernameClicked(msg.username)" class=" btn-link">{{msg.username}}</span>:</b> <a id="single_image" href={{msg.url}}><img ng-src={{msg.url}} height="200" alt="" width="200"></a> </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="input-control checkbox">
+                <label>
+                    <input type="checkbox" />
+                    <span class="check"></span>
+                    Autoscroll
+                </label>
+            </div>
+
+
+            <div class="ChatField">
+                <input type="text" class="form-control" autofocus="autofocus" ng-model="chatMessage" ng-enter="sendLobbyMessage(chatMessage)" maxlength="200" placeholder="Write a message" />
+                <button type="button" ng-click="postPicture()" class="btn btn-info"><span class="glyphicon glyphicon-picture"></span> Post image</button>
+            </div>
+
+        </div>
     </div>
 </div>
+

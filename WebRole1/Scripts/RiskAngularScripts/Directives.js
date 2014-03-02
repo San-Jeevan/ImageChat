@@ -27,3 +27,5 @@ myModule.directive('ngFastSwitch', function () {
         });
     };
 });
+
+
